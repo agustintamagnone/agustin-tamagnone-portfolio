@@ -5,7 +5,7 @@ import "./globals.css";
 const geist = localFont({
   src: [
     {
-      path: "../fonts/GeistVF.woff",
+      path: "../public/fonts/GeistVF.woff",
       weight: "400",
       style: "normal",
     },
@@ -20,14 +20,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={geist.className}
-      >
+      <body className={geist.className}>
         {children}
       </body>
     </html>
