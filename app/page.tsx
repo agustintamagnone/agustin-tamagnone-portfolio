@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
         <div className="relative z-20">
           <header className="fixed top-0 left-0 right-0 flex justify-center bg-opacity-90 backdrop-blur-md z-40 shadow-md">
             <div className="max-w-[1180px] w-full flex items-center justify-between px-6 py-4">
-              <a href="#" className="text-xl font-bold">Agustin Tamagnone</a>
+              <a href="#" className="text-xl">Agustin Tamagnone</a>
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex text-center">
@@ -186,10 +186,10 @@ export default function Home(): JSX.Element {
 
           <div className="flex flex-col text-center items-center">
             <Image src="/profile-bandw2.png" width={300} height={300} alt="Profile" className="relative rounded-lg w-32 top-2 md:w-48" />
-            <motion.h2 className="text-4xl pt-10 font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.h2 className="text-4xl pt-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               Agustin Tamagnone
             </motion.h2>
-            <motion.h2 className="text-xl mb-1 pt-2 font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.h2 className="text-xl mb-1 pt-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               Software Developer
             </motion.h2>
             <h1 className='mb-5 text-lg leading-tight text-center md:text-left md:text-2xl md:mb-10'>If you can think about it,

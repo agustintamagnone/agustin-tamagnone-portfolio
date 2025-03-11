@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
-
-const geist = localFont({
-  src: [
-    {
-      path: "../public/fonts/GeistVF.woff",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  display: 'swap',
-  variable: "--font-geist"
-});
+import { GeistSans } from 'geist/font/sans';
 
 export const metadata: Metadata = {
   title: "Agustin Tamagnone",
@@ -24,7 +13,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={geist.variable}>
+      <body className={GeistSans.variable}>
         {children}
       </body>
     </html>
