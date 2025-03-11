@@ -313,8 +313,8 @@ export default function Home(): JSX.Element {
           <motion.h2 className="text-4xl font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>Contact Me</motion.h2>
           <motion.p className="mt-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>You can reach out to me via <a href="mailto:agustintamagnone1@hotmail.com" className="text-blue-500 hover:underline">agustintamagnone1@hotmail.com</a> or through this form.</motion.p>
           <form action="https://formspree.io/f/mjkyvoog " method="POST" className={`relative mt-6 max-w-lg mx-auto  p-6 rounded-lg ${darkMode ? "border border-white" : "border border-black"}`}>
-            <input type="email" name="email" placeholder="Your email" required className="w-full p-3 text-black rounded-md bg-white dark:bg-gray-900 border border-black-300 dark:border-gray-700 mb-4" />
-            <textarea name="message" placeholder="Your message" required className="w-full p-3 text-black rounded-md bg-white dark:bg-gray-900 border border-black-300 dark:border-gray-700 h-32 mb-4"></textarea>
+            <input type="email" name="email" placeholder="Your email" required className="w-full p-3 text-black rounded-md bg-white border border-black-300 mb-4" />
+            <textarea name="message" placeholder="Your message" required className="w-full p-3 text-black rounded-md bg-white border border-black-300 h-32 mb-4"></textarea>
             <button type="submit" className={`px-6 py-3 rounded-full border transition ${darkMode
               ? "font-medium bg-black text-white border-white hover:opacity-80"
               : "font-medium bg-white text-black border-black hover:opacity-80"

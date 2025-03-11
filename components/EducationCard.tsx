@@ -23,10 +23,10 @@ const EducationCard = ({ education, darkMode }: EducationProps) => {
         </div>
         <div className="md:ml-6 text-left">
           <h3 className="text-2xl font-bold">{education.degree}</h3>
-          <p className="text-lg dark:text-gray-300">{education.university}</p>
-          <p className="text-md dark:text-gray-400">{education.graduation}</p>
-          <p className="text-md dark:text-gray-400">{education.gpa}</p>
-          <ul className="mt-2 list-disc list-inside dark:text-gray-300">
+          <p className="text-lg">{education.university}</p>
+          <p className="text-md">{education.graduation}</p>
+          <p className="text-md">{education.gpa}</p>
+          <ul className="mt-2 list-disc list-inside">
             {education.details.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

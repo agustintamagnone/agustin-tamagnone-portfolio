@@ -13,7 +13,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.variable}>
+      <body className={GeistSans.className}>
         {children}
       </body>
     </html>
