@@ -11,7 +11,11 @@ import CoverParticles from "../components/CoverParticles";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import EducationCard from "../components/EducationCard";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Home(): JSX.Element {
   // Estado para manejar el tema del sitio
@@ -20,8 +24,17 @@ export default function Home(): JSX.Element {
 
   const experiences = [
     {
-      date: "ENE 2023 - OCT 2024",
+      date: "ENE 2024 - OCT 2024",
       title: "Territory Manager (South America and Canada)",
+      company: "UTR Sports - Palo Alto, CA",
+      logo: "/utr-logo.png",
+      challenge: "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
+      action: "Implemented micro-frontend architecture, increasing system agility and responsiveness.",
+      result: "Contributed to the product's scalability by ensuring the frontend could handle the increase from 15k to 75k sub-accounts within a year."
+    },
+    {
+      date: "JAN 2023 - DEC 2024",
+      title: "Program Manager (College Dpt.)",
       company: "UTR Sports - Palo Alto, CA",
       logo: "/utr-logo.png",
       challenge: "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
@@ -56,7 +69,7 @@ export default function Home(): JSX.Element {
       image: "/LP-Builder.png",
       title: "Landing Page Builder",
       labels: ["Wordpress", "PHP", "JavaScript", "SASS"],
-      description: "to-result is Ruby gem, a small but handy wrapper build over dry-monads to make working with monads easier, consistent and safer.",
+      description: "Built a modular Landing Page builder which contains over 60 reusable modules with user inputs for global elements.",
       liveLink: "#",
       githubLink: "#"
     },
@@ -64,25 +77,33 @@ export default function Home(): JSX.Element {
       image: "/GPN.png",
       title: "Global Padel Number",
       labels: ["Python", "NextJS", "AWS"],
-      description: "Faenz is a simple, open source, lightweight and privacy friendly web analytics, similar to Plausible.",
+      description: "Implemented ELO algorithm to calculate player’s skill and classification of Padel based on match results.",
       liveLink: "#",
       githubLink: "#"
     },
     {
       image: "/siempremono.jpeg",
-      title: "Medium No Thanks",
-      labels: ["Android", "Kotlin"],
+      title: "Java Spring Boot Project [COMING SOON]",
+      labels: ["Java", "Java Spring Boot", "Rest API"],
       description: "Android application to freely read medium.com articles that works by emulating the browser anonymous navigation.",
       liveLink: "#",
       githubLink: "#"
+    },
+    {
+      image: "/keyhc.png",
+      title: "Key Healthcare Wordpress Site",
+      labels: ["Wordpress", "PHP", "JavaScript", "SASS"],
+      description: "Website for Key Healthcare treatment center in Los Angeles.",
+      liveLink: "https://keyhealthcare.com/",
+      githubLink: "#"
     }
   ];
-  
+
 
   return (
     <div className={darkMode ? "bg-black text-white min-h-screen" : "bg-white text-black min-h-screen"}>
 
-      <CoverParticles/>
+      <CoverParticles />
 
       <main className="max-w-[1180px] w-full mx-auto px-6 z-30">
 
@@ -160,7 +181,7 @@ export default function Home(): JSX.Element {
             </div>
           )}
         </div>
-        
+
         <section id="about" className="flex flex-col pt-40 py-20 text-center">
 
           <div className="flex flex-col text-center items-center">
@@ -171,30 +192,28 @@ export default function Home(): JSX.Element {
             <motion.h2 className="text-xl mb-1 pt-2 font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               Software Developer
             </motion.h2>
-            <h1 className='mb-5 text-lg leading-tight text-center md:text-left md:text-2xl md:mb-10'>Si puedes pensarlo,
-                        <TypeAnimation
-                            sequence={[
-                                " puedes programarlo.",
-                                1000,
-                                " puedes optimizarlo.",
-                                1000,
-                                " puedes implementarlo.",
-                                1000,
-                                " puedes desarrollarlo.",
-                                100
-                            ]}
-                            wrapper='span'
-                            speed={50}
-                            repeat={Infinity}
-                            className="font-bold text-secondary"
-                        />
+            <h1 className='mb-5 text-lg leading-tight text-center md:text-left md:text-2xl md:mb-10'>If you can think about it,
+              <TypeAnimation
+                sequence={[
+                  " you can code it.",
+                  1000,
+                  " you can optimize it.",
+                  1000,
+                  " you can implement it.",
+                  1000,
+                  " you can develop it.",
+                  100
+                ]}
+                wrapper='span'
+                speed={50}
+                repeat={Infinity}
+                className="font-bold text-secondary"
+              />
             </h1>
             <p className="mt-1 max-w-2xl mx-auto">
-              Desarrollador de software con pasión por crear sistemas dinámicos y responsivos, inlcuyendo
-              aplicaciones y sitios web. He adquirido
-              una amplia experiencia en el desarrollo de soluciones personalizadas, y estoy siempre en busca de
-              oportunidades para ampliar mis conocimientos y habilidades en nuevas tecnologías y campos del
-              desarrollo de software.
+              Software developer with a passion for creating dynamic and responsive systems,
+              including applications and websites. Gained experience in developing customized
+              solutions and always seeking opportunities to expand my knowledge and skills.
             </p>
             <div className="flex items-center justify-center py-6 space-x-3">
               <a href="https://www.linkedin.com/in/agustin-tamagnone" target="_blank">
@@ -208,8 +227,8 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className="z-10 mt-6 flex space-x-4">
-              <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8"/>
-              <ButtonSecondary text ="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:087ee381-3148-43a2-9794-ecdb0dac30c2" />
+              <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:087ee381-3148-43a2-9794-ecdb0dac30c2" />
             </div>
           </div>
         </section>
@@ -233,22 +252,66 @@ export default function Home(): JSX.Element {
           </div>
         </section>
 
-        <section id="projects" className="py-20">
+        <section id="projects" className="py-20 relative">
           <h2 className="text-4xl font-bold text-center">Projects</h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} darkMode={darkMode}/>
-            ))}
+
+          <div className="mt-10 relative">
+            {projects.length > 3 ? (
+              <>
+                <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: ".custom-swiper-button-next",
+                    prevEl: ".custom-swiper-button-prev",
+                  }}
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  breakpoints={{
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                  }}
+                  className="w-full"
+                >
+                  {projects.map((project, index) => (
+                    <SwiperSlide key={index}>
+                      <ProjectCard project={project} darkMode={darkMode} />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+
+                {/* Left Arrow - Positioned Outside Cards */}
+                <button
+                  className={`custom-swiper-button-prev absolute top-1/2 -left-16 transform -translate-y-1/2 z-50 ${darkMode ? "text-white" : "text-black"
+                    }`}
+                >
+                  <ChevronLeft size={32} />
+                </button>
+
+                {/* Right Arrow - Positioned Outside Cards */}
+                <button
+                  className={`custom-swiper-button-next absolute top-1/2 -right-16 transform -translate-y-1/2 z-50 ${darkMode ? "text-white" : "text-black"
+                    }`}
+                >
+                  <ChevronRight size={32} />
+                </button>
+              </>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projects.map((project, index) => (
+                  <ProjectCard key={index} project={project} darkMode={darkMode} />
+                ))}
+              </div>
+            )}
           </div>
         </section>
 
         <section id="education" className="py-20 text-center">
-          <EducationCard education={education} darkMode={darkMode}/>
+          <EducationCard education={education} darkMode={darkMode} />
         </section>
 
         <section id="contact" className="text-center mb-20 z-20">
           <motion.h2 className="text-4xl font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>Contact Me</motion.h2>
-          <motion.p className="mt-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>You can reach out to me via <a href="mailto:agustintamagnone1@hotmail.com" className="text-blue-500 hover:underline">agustintamagnone1@hotmail.com</a> or through this form.</motion.p> 
+          <motion.p className="mt-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>You can reach out to me via <a href="mailto:agustintamagnone1@hotmail.com" className="text-blue-500 hover:underline">agustintamagnone1@hotmail.com</a> or through this form.</motion.p>
           <form action="https://formspree.io/f/mjkyvoog " method="POST" className={`relative mt-6 max-w-lg mx-auto  p-6 rounded-lg ${darkMode ? "border border-white" : "border border-black"}`}>
             <input type="email" name="email" placeholder="Your email" required className="w-full p-3 text-black rounded-md bg-white dark:bg-gray-900 border border-black-300 dark:border-gray-700 mb-4" />
             <textarea name="message" placeholder="Your message" required className="w-full p-3 text-black rounded-md bg-white dark:bg-gray-900 border border-black-300 dark:border-gray-700 h-32 mb-4"></textarea>
@@ -266,19 +329,20 @@ export default function Home(): JSX.Element {
       <footer className={`relative z-10 border-t py-3 flex flex-row items-center text-center ${darkMode ? " border-white" : "border-black"}`}>
         <p className="flex-1/2">© 2025 Designed with ❤️ by Agustin Tamagnone. All rights reserved.</p>
         <div className="flex-1/3 flex items-center justify-center py-6 space-x-3">
-              <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8"/>
-              <a href="https://www.linkedin.com/in/agustin-tamagnone" target="_blank">
-                <Linkedin className="transition duration-300 hover:text-gray-400" size={22}></Linkedin>
-              </a>
-              <a href="https://github.com/agustintamagnone" target="_blank">
-                <Github className="transition duration-300 hover:text-gray-400" size={22}></Github>
-              </a>
-              <a href="mailto:agustintamagnone1@hotmail.com" target="_blank">
-                <Mail className="transition duration-300 hover:text-gray-400" size={22}></Mail>
-              </a>
+          <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
+          <a href="https://www.linkedin.com/in/agustin-tamagnone" target="_blank">
+            <Linkedin className="transition duration-300 hover:text-gray-400" size={22}></Linkedin>
+          </a>
+          <a href="https://github.com/agustintamagnone" target="_blank">
+            <Github className="transition duration-300 hover:text-gray-400" size={22}></Github>
+          </a>
+          <a href="mailto:agustintamagnone1@hotmail.com" target="_blank">
+            <Mail className="transition duration-300 hover:text-gray-400" size={22}></Mail>
+          </a>
         </div>
       </footer>
 
     </div>
   );
 }
+

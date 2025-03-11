@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
 
@@ -16,10 +16,24 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
   return (
-    <div className="z-10 border border-white shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl">
-      <Image src={project.image} alt={project.title} width={400} height={250} className="w-full h-48 object-cover" />
-      <div className="p-4">
+    <div className="z-10 flex flex-col h-[520px] justify-between border border-white shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl">
+      
+      {/* Image Section - Full Width & Fixed Height */}
+      <div className="w-full">
+        <Image 
+          src={project.image} 
+          alt={project.title} 
+          width={400} 
+          height={250} 
+          className="w-full h-52 object-cover" 
+        />
+      </div>
+
+      {/* Content Section - Uses flex to ensure proper spacing */}
+      <div className="flex flex-col flex-1 p-6">
         <h3 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-black"}`}>{project.title}</h3>
+
+        {/* Labels */}
         <div className="flex flex-wrap gap-2 mt-2">
           {project.labels.map((label, index) => (
             <span key={index} className={`text-sm px-2 py-1 rounded-md ${darkMode ? "border border-white text-white" : "bg-black text-white"}`}>
@@ -27,8 +41,14 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
             </span>
           ))}
         </div>
-        <p className={`mt-3 ${darkMode ? "text-white" : "text-black"}`}>{project.description}</p>
-        <div className="mt-4 flex gap-3">
+
+        {/* Description - Expands to ensure all cards match height */}
+        <p className={`mt-3 flex-grow ${darkMode ? "text-white" : "text-black"}`}>
+          {project.description}
+        </p>
+
+        {/* Buttons Section - Always Stays at Bottom */}
+        <div className="mt-auto flex gap-3">
           {project.liveLink && (
             <a
               href={project.liveLink}
@@ -53,7 +73,7 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
                 : "font-medium bg-black text-white border-black hover:opacity-80"
             }`}
           >
-           GitHub <Github className="ml-2" size={16} />
+            GitHub <Github className="ml-2" size={16} />
           </a>
         </div>
       </div>
