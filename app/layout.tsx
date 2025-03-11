@@ -10,7 +10,8 @@ const geist = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-geist",
+  display: 'swap',
+  variable: "--font-geist"
 });
 
 export const metadata: Metadata = {
