@@ -215,7 +215,7 @@ export default function Home(): JSX.Element {
               including applications and websites. Gained experience in developing customized
               solutions and always seeking opportunities to expand my knowledge and skills.
             </p>
-            <div className="flex items-center justify-center py-6 space-x-3">
+            <div className="flex items-center relative justify-center py-6 space-x-3">
               <a href="https://www.linkedin.com/in/agustin-tamagnone" target="_blank">
                 <Linkedin className="transition duration-300 hover:text-gray-400" size={22}></Linkedin>
               </a>
@@ -311,7 +311,7 @@ export default function Home(): JSX.Element {
 
         <section id="contact" className="text-center mb-20 z-20">
           <motion.h2 className="text-4xl font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>Contact Me</motion.h2>
-          <motion.p className="mt-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>You can reach out to me via <a href="mailto:agustintamagnone1@hotmail.com" className="text-blue-500 hover:underline">agustintamagnone1@hotmail.com</a> or through this form.</motion.p>
+          <motion.p className="mt-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>You can reach out to me via <a href="mailto:agustintamagnone1@hotmail.com" className="relative text-blue-500 hover:underline">agustintamagnone1@hotmail.com</a> or through this form.</motion.p>
           <form action="https://formspree.io/f/mjkyvoog " method="POST" className={`relative mt-6 max-w-lg mx-auto  p-6 rounded-lg ${darkMode ? "border border-white" : "border border-black"}`}>
             <input type="email" name="email" placeholder="Your email" required className="w-full p-3 text-black rounded-md bg-white border border-black-300 mb-4" />
             <textarea name="message" placeholder="Your message" required className="w-full p-3 text-black rounded-md bg-white border border-black-300 h-32 mb-4"></textarea>
