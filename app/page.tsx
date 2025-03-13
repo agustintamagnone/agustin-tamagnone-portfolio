@@ -24,31 +24,31 @@ export default function Home(): JSX.Element {
 
   const experiences = [
     {
-      date: "ENE 2024 - OCT 2024",
+      date: "JAN 2024 - OCT 2024",
       title: "Territory Manager (South America and Canada)",
       company: "UTR Sports - Palo Alto, CA",
       logo: "/utr-logo.png",
-      challenge: "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
-      action: "Implemented micro-frontend architecture, increasing system agility and responsiveness.",
-      result: "Contributed to the product's scalability by ensuring the frontend could handle the increase from 15k to 75k sub-accounts within a year."
+      challenge: "To expand and elevate tennis and the presence of the brand in South America and Canada by bringing innovative prospects to Clubs and Associations in these countries and provide more opportunities to players in the region.",
+      action: "Spearheaded new sales initiatives to attract new clubs and associations, developed new circuit of tournaments, oversaw and enhanced relationships with existing clients.",
+      result: "Contributed with the expansion of the tournaments of big importance that distributed over $200,000 USD in Argentina and Canada and to the other regions which provides competition and prize money opportunities for players and visibility with those tournaments itself in platforms such as Amazon Video, innovating and elevating tennis and increasing the exposure of the brand in my region."
     },
     {
       date: "JAN 2023 - DEC 2024",
       title: "Program Manager (College Dpt.)",
       company: "UTR Sports - Palo Alto, CA",
       logo: "/utr-logo.png",
-      challenge: "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
-      action: "Implemented micro-frontend architecture, increasing system agility and responsiveness.",
-      result: "Contributed to the product's scalability by ensuring the frontend could handle the increase from 15k to 75k sub-accounts within a year."
+      challenge: "Expansion of the UTR brand and projects into Universities across the US by helping College Coaches and bringing more competition opportunities for players.",
+      action: "Promotion and sale of two key products, 'Summer Camps' and 'College Circuits,' to college tennis coaches, which helps driving revenue for their programs and brings competition opportunities to players.",
+      result: "Contributed growth of department revenue by 63% and strengthened college coach relationships with our brand by helping them make revenue with our projects which brought competition and prize money opportunities to college and junior players."
     },
     {
       date: "MAY 2022 - MAY 2023",
       title: "Web Developer (Wordpress, PHP, JavaScript and SASS)",
       company: "Cardinal Digital Marketing - Atlanta, GA",
       logo: "/cardinal-logo.png",
-      challenge: "Company needed to expand offerings, accelerate time-to-market, and foster growth in a team of junior developers.",
-      action: "Led product development, launched new products, and mentored junior developers.",
-      result: "Helped increase company valuation by 10x and cultivated an efficient work environment."
+      challenge: "Company needed to expand offerings, accelerate time of development and deliver products to clients faster, in a development team of two people.",
+      action: "Built a modular Landing Page builder which contains over 60 reusable modules and contributed on maintenance of current client sites.",
+      result: "Helped increase company delivery of products by 10x with boilerplate sites that were already built and cultivated an efficient work environment."
     }
   ];
 
@@ -228,7 +228,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:087ee381-3148-43a2-9794-ecdb0dac30c2" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:ddebdc06-f570-4314-b236-913b576999e0" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:087ee381-3148-43a2-9794-ecdb0dac30c2" />
             </div>
           </div>
         </section>
