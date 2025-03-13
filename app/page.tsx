@@ -82,7 +82,7 @@ export default function Home(): JSX.Element {
       githubLink: "#"
     },
     {
-      image: "/siempremono.jpeg",
+      image: "/spr.png",
       title: "Java Spring Boot Project [COMING SOON]",
       labels: ["Java", "Java Spring Boot", "Rest API"],
       description: "Android application to freely read medium.com articles that works by emulating the browser anonymous navigation.",
