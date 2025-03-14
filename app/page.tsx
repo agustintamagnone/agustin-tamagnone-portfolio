@@ -211,9 +211,10 @@ export default function Home(): JSX.Element {
               />
             </h1>
             <p className="mt-1 max-w-2xl mx-auto">
-              Software developer with a passion for creating dynamic and responsive systems,
-              including applications and websites. Gained experience in developing customized
-              solutions and always seeking opportunities to expand my knowledge and skills.
+              I am a dedicated professional with a strong foundation in Software Engineering and Development. 
+              With my experience I have developed adaptability, strategic thinking, and a deep understanding of both technical and client-facing aspects. 
+              I am committed to continuous learning and bringing creativity to every project. 
+              I look forward to connecting with professionals and contributing to impactful initiatives.
             </p>
             <div className="flex items-center relative justify-center py-6 space-x-3">
               <a href="https://www.linkedin.com/in/agustin-tamagnone" target="_blank">
@@ -228,8 +229,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:ddebdc06-f570-4314-b236-913b576999e0" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:087ee381-3148-43a2-9794-ecdb0dac30c2" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:ff4f6812-1bb3-4b8e-a285-dc0ac1694372" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:687d31b1-b8e4-499c-a683-cf1f9983898a" />
             </div>
           </div>
         </section>
