@@ -11,6 +11,7 @@ import CoverParticles from "../components/CoverParticles";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import EducationCard from "../components/EducationCard";
+import CertificationCard from "../components/CertificationCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -52,17 +53,35 @@ export default function Home(): JSX.Element {
     }
   ];
 
-  const education = {
-    logo: "/GGC-logo.png",
-    degree: "Bachelor of IT: Software Development",
-    university: "Georgia Gwinnett College",
-    graduation: "Graduated in 2022",
-    gpa: "GPA 3.3/4",
-    details: [
-      "Student-Athlete for the Grizzlies",
-      "Science & Engineering Dean's List - 2020 & 2021"
-    ]
-  };
+  const education = { 
+      logo: "/GGC-logo.png",
+      degree: "Bachelor of IT: Software Development",
+      university: "Georgia Gwinnett College",
+      graduation: "Graduated in 2022",
+      gpa: "GPA 3.3/4",
+      details: [
+        "Student-Athlete for the Grizzlies",
+        "Science & Engineering Dean's List - 2020 & 2021"
+      ]
+    };
+
+    const certifications = [
+      {
+        badge: "/microsoft-logo.png",
+        title: "MTA Networking Certificate",
+        date: "April 2021",
+      },
+      {
+        badge: "/aws-certified-cloud-practitioner.png",
+        title: "AWS Certified Cloud Practitioner",
+        date: "April 2025",
+      },
+      {
+        badge: "/AWS-Certified-AI-Practitioner.png",
+        title: "AWS Certified AI Practitioner",
+        date: "In Progress",
+      },
+    ];
 
   const projects = [
     {
@@ -309,6 +328,10 @@ export default function Home(): JSX.Element {
 
         <section id="education" className="py-20 text-center">
           <EducationCard education={education} darkMode={darkMode} />
+        </section>
+
+        <section id="certifications" className="py-20 pt-0.5 text-center">
+          <CertificationCard certifications={certifications} darkMode={darkMode} />
         </section>
 
         <section id="contact" className="text-center mb-20 z-20">
