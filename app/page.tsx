@@ -53,35 +53,35 @@ export default function Home(): JSX.Element {
     }
   ];
 
-  const education = { 
-      logo: "/GGC-logo.png",
-      degree: "Bachelor of IT: Software Development",
-      university: "Georgia Gwinnett College",
-      graduation: "Graduated in 2022",
-      gpa: "GPA 3.3/4",
-      details: [
-        "Student-Athlete for the Grizzlies",
-        "Science & Engineering Dean's List - 2020 & 2021"
-      ]
-    };
+  const education = {
+    logo: "/GGC-logo.png",
+    degree: "Bachelor of IT: Software Development",
+    university: "Georgia Gwinnett College",
+    graduation: "Graduated in 2022",
+    gpa: "GPA 3.3/4",
+    details: [
+      "Student-Athlete for the Grizzlies",
+      "Science & Engineering Dean's List - 2020 & 2021"
+    ]
+  };
 
-    const certifications = [
-      {
-        badge: "/microsoft-logo.png",
-        title: "MTA Networking Certificate",
-        date: "April 2021",
-      },
-      {
-        badge: "/aws-certified-cloud-practitioner.png",
-        title: "AWS Certified Cloud Practitioner",
-        date: "April 2025",
-      },
-      {
-        badge: "/AWS-Certified-AI-Practitioner.png",
-        title: "AWS Certified AI Practitioner",
-        date: "In Progress",
-      },
-    ];
+  const certifications = [
+    {
+      badge: "/microsoft-logo.png",
+      title: "MTA Networking Certificate",
+      date: "April 2021",
+    },
+    {
+      badge: "/aws-certified-cloud-practitioner.png",
+      title: "AWS Certified Cloud Practitioner",
+      date: "April 2025",
+    },
+    {
+      badge: "/AWS-Certified-AI-Practitioner.png",
+      title: "AWS Certified AI Practitioner",
+      date: "In Progress",
+    },
+  ];
 
   const projects = [
     {
@@ -230,9 +230,9 @@ export default function Home(): JSX.Element {
               />
             </h1>
             <p className="mt-1 max-w-2xl mx-auto">
-              I am a dedicated professional with a strong foundation in Software Engineering and Development. 
-              With my experience I have developed adaptability, strategic thinking, and a deep understanding of both technical and client-facing aspects. 
-              I am committed to continuous learning and bringing creativity to every project. 
+              I am a dedicated professional with a strong foundation in Software Engineering and Development.
+              With my experience I have developed adaptability, strategic thinking, and a deep understanding of both technical and client-facing aspects.
+              I am committed to continuous learning and bringing creativity to every project.
               I look forward to connecting with professionals and contributing to impactful initiatives.
             </p>
             <div className="flex items-center relative justify-center py-6 space-x-3">
@@ -248,8 +248,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:1125946a-174c-4af5-9ff3-23df5a3f6bee" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:6e006ba3-ca32-40bb-83f7-9d68a24c23ad" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:f552d91e-94a2-4b7b-95df-0766efa52870" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:a6337571-fe4c-4382-83b5-f322531ebf0d" />
             </div>
           </div>
         </section>
