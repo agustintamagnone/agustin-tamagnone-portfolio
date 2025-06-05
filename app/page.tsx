@@ -213,7 +213,6 @@ export default function Home(): JSX.Element {
         </div>
 
         <section id="about" className="flex flex-col pt-40 py-20 text-center">
-
           <div className="flex flex-col text-center items-center">
             <Image src="/profile-bandw2.png" width={300} height={300} alt="Profile" className="relative rounded-lg w-32 top-2 md:w-48" />
             <motion.h2 className="text-4xl pt-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -222,7 +221,7 @@ export default function Home(): JSX.Element {
             <motion.h2 className="text-xl mb-1 pt-2" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
               Software Developer
             </motion.h2>
-            <h1 className='mb-5 text-lg leading-tight text-center md:text-left md:text-2xl md:mb-10'>If you can think about it,
+            <h1 className='mb-5 text-sm leading-tight text-center md:text-left md:text-2xl md:mb-10'>If you can think about it,
               <TypeAnimation
                 sequence={[
                   " you can code it.",
@@ -232,7 +231,7 @@ export default function Home(): JSX.Element {
                   " you can implement it.",
                   1000,
                   " you can develop it.",
-                  100
+                  1000
                 ]}
                 wrapper='span'
                 speed={50}
