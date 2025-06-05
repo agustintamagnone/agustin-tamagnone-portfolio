@@ -53,17 +53,28 @@ export default function Home(): JSX.Element {
     }
   ];
 
-  const education = {
-    logo: "/GGC-logo.png",
-    degree: "Bachelor of IT: Software Development",
-    university: "Georgia Gwinnett College",
-    graduation: "Graduated in 2022",
-    gpa: "GPA 3.3/4",
-    details: [
-      "Student-Athlete for the Grizzlies",
-      "Science & Engineering Dean's List - 2020 & 2021"
-    ]
-  };
+  const educations = [
+    {
+      logo: "/upm.png",
+      degree: "Master in Software Engineering",
+      university: "Universidad Politécnica de Madrid",
+      graduation: "Starting Septebmer 2025",
+      gpa: "GPA TBD",
+      details: [
+      ]
+    },
+    {
+      logo: "/GGC-logo.png",
+      degree: "Bachelor of IT: Software Development",
+      university: "Georgia Gwinnett College",
+      graduation: "Graduated in 2022",
+      gpa: "GPA 3.3/4",
+      details: [
+        "Student-Athlete for the Grizzlies",
+        "Science & Engineering Dean's List - 2020 & 2021"
+      ]
+    }
+  ];
 
   const certifications = [
     {
@@ -95,18 +106,18 @@ export default function Home(): JSX.Element {
     {
       image: "/GPN.png",
       title: "Global Padel Number",
-      labels: ["Python", "NextJS", "AWS"],
+      labels: ["Python", "Flask", "NextJS", "MySQL", "AWS"],
       description: "Implemented ELO algorithm to calculate player’s skill and classification of Padel based on match results.",
       liveLink: "#",
       githubLink: "#"
     },
     {
-      image: "/spr.png",
-      title: "Java Spring Boot Project [COMING SOON]",
-      labels: ["Java", "Java Spring Boot", "Rest API"],
-      description: "Android application to freely read medium.com articles that works by emulating the browser anonymous navigation.",
+      image: darkMode ? "/blancaley-blanco.png" : "/blancaley-negro.png",
+      title: "Blancaley - Ordering System",
+      labels: ["Java", "SpringBoot", "REST API", "NextJS", "Swagger", "Postman", "Docker", "PostgreSQL"],
+      description: "A full-stack web application for managing paint sales online. Users can add products to a cart, manage quantities, and complete their purchase by entering personal and shipping details.",
       liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/agustintamagnone/blancaley"
     },
     {
       image: "/keyhc.png",
@@ -248,15 +259,15 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:93e9dd61-f147-4abb-8172-97841663163e" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:fc672e12-25c9-4155-9e72-3990cca5d940" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:d2c4e8e1-24f8-45b5-8300-52ad2789b7f7" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:83de9c5e-ca9e-4a14-86c0-19ef7df99b22" />
             </div>
           </div>
         </section>
 
         <section id="experience" className="py-20">
           <motion.h2 className="text-4xl font-bold text-center">Experience</motion.h2>
-          <div className="mt-10 -left-4 relative border-l-2 border-gray-400 dark:border-gray-600 pl-8">
+          <div className="mt-10 -right-2 relative border-l-2 border-gray-400 dark:border-gray-600 pl-8">
             {experiences.map((exp, index) => (
               <div key={index} className="mb-10 relative">
                 <div className="absolute -left-15 top-0 flex items-center justify-center w-13.5 h-13.5 bg-white dark:bg-gray-800 rounded-full shadow-md border border-gray-300 dark:border-gray-600">
@@ -327,7 +338,7 @@ export default function Home(): JSX.Element {
         </section>
 
         <section id="education" className="py-20 text-center">
-          <EducationCard education={education} darkMode={darkMode} />
+          <EducationCard educations={educations} darkMode={darkMode} />
         </section>
 
         <section id="certifications" className="py-20 pt-0.5 text-center">

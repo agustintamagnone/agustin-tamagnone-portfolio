@@ -16,7 +16,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
   return (
-    <div className="z-10 flex flex-col h-[520px] justify-between border border-white shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl">
+    <div className={`z-10 flex flex-col h-[600px] justify-between border ${darkMode ? "border-white" : "border-black"} shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl`}>
       
       {/* Image Section - Full Width & Fixed Height */}
       <div className="w-full">
@@ -25,7 +25,7 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
           alt={project.title} 
           width={400} 
           height={250} 
-          className="w-full h-52 object-cover" 
+          className="w-full h-48 object-cover" 
         />
       </div>
 
