@@ -16,7 +16,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
   return (
-    <div className={`z-10 flex flex-col h-[600px] justify-between border ${darkMode ? "border-white" : "border-black"} shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl`}>
+    <div className={`z-10 flex flex-col h-[650px] justify-between border ${darkMode ? "border-white" : "border-black"} shadow-lg rounded-xl overflow-hidden transition hover:shadow-xl`}>
       
       {/* Image Section - Full Width & Fixed Height */}
       <div className="w-full">
