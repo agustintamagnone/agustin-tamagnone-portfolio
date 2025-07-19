@@ -116,7 +116,7 @@ export default function Home(): JSX.Element {
       title: "Blancaley - Ordering System",
       labels: ["Java", "SpringBoot", "REST API", "NextJS", "Swagger", "Postman", "Docker", "PostgreSQL"],
       description: "Blancaley is an e-commerce web application built to manage orders and users for a paint store. The project follows a layer architecture, separating the logic of user management and order/product handling into independent services to ensure scalability, maintainability, and modular deployment.",
-      liveLink: "#",
+      liveLink: "https://blancaley-frontend.vercel.app/",
       githubLink: "https://github.com/agustintamagnone/blancaley"
     },
     {
