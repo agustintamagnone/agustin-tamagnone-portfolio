@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
       logo: "/upm.png",
       degree: "Master in Software Engineering",
       university: "Universidad Politécnica de Madrid",
-      graduation: "Starting Septebmer 2025",
+      graduation: "Starting September 2025",
       gpa: "GPA TBD",
       details: [
       ]
