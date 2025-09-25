@@ -25,6 +25,15 @@ export default function Home(): JSX.Element {
 
   const experiences = [
     {
+      date: "SEPT 2025 - Present",
+      title: "Backend Developer Intern",
+      company: "Toppan Digital Language - Madrid, Spain",
+      logo: "/tdl-logo.png",
+      challenge: "Working on a Machine Learning and NLP model development to automate internal company processes and customer experience.",
+      action: "N/A",
+      result: "N/A"
+    },
+    {
       date: "JAN 2024 - OCT 2024",
       title: "Territory Manager (South America and Canada)",
       company: "UTR Sports - Palo Alto, CA",
