@@ -28,10 +28,10 @@ export default function Home(): JSX.Element {
       date: "SEPT 2025 - Present",
       title: "Backend Developer Intern",
       company: "Toppan Digital Language - Madrid, Spain",
-      logo: "/TDL-logo.png",
+      logo: "/tdl-logo.png",
       challenge: "Working on a Machine Learning and NLP model development to automate internal company processes and customer experience.",
-      action: "",
-      result: ""
+      action: "N/A",
+      result: "N/A"
     },
     {
       date: "JAN 2024 - OCT 2024",
