@@ -29,9 +29,9 @@ export default function Home(): JSX.Element {
       title: "Backend Developer Intern",
       company: "Toppan Digital Language - Madrid, Spain",
       logo: "/tdl-logo.png",
-      challenge: "Working on a Machine Learning and NLP model development to automate internal company processes and customer experience.",
-      action: "N/A",
-      result: "N/A"
+      challenge: "Design and development of internal company processes and customer experience based on a service using Machine Learning and NLP on a Transformers based model.",
+      action: "Assisted the development of this model while collaborating on pair-programming sessions.",
+      result: "Contributed to the internal deployment of this model that saves a big amount of time on our internal processes and tasks facilitating a faster delivery of works to our customers."
     },
     {
       date: "JAN 2024 - OCT 2024",
