@@ -105,12 +105,20 @@ export default function Home(): JSX.Element {
 
   const projects = [
     {
-      image: "/LP-Builder.png",
-      title: "Landing Page Builder",
-      labels: ["Wordpress", "PHP", "JavaScript", "SASS"],
-      description: "Built a modular Landing Page builder which contains over 60 reusable modules with user inputs for global elements.",
+      image: "/fake-news-detector.png",
+      title: "Fake News Detector Machine Learning Project",
+      labels: ["Machine Learning", "DistilBERT", "Python", "Jupyter", "Docker"],
+      description: "Machine Learning based Fake News Detector, that predicts and classifies an article as TRUE/FAKE based on NLP techniques and DistilBERT transformer model.",
       liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/Birk2450/fake-news-detector-distilbert"
+    },
+    {
+      image: darkMode ? "/blancaley-blanco.png" : "/blancaley-negro.png",
+      title: "Blancaley - Ordering System",
+      labels: ["Java", "SpringBoot", "REST API", "NextJS", "Swagger", "Postman", "Docker", "PostgreSQL"],
+      description: "Blancaley is an e-commerce web application built to manage orders and users for a paint store. The project follows a layer architecture, separating the logic of user management and order/product handling into independent services to ensure scalability, maintainability, and modular deployment.",
+      liveLink: "https://blancaleypinturas.com.ar/",
+      githubLink: "https://github.com/agustintamagnone/blancaley"
     },
     {
       image: "/GPN.png",
@@ -121,12 +129,12 @@ export default function Home(): JSX.Element {
       githubLink: "#"
     },
     {
-      image: darkMode ? "/blancaley-blanco.png" : "/blancaley-negro.png",
-      title: "Blancaley - Ordering System",
-      labels: ["Java", "SpringBoot", "REST API", "NextJS", "Swagger", "Postman", "Docker", "PostgreSQL"],
-      description: "Blancaley is an e-commerce web application built to manage orders and users for a paint store. The project follows a layer architecture, separating the logic of user management and order/product handling into independent services to ensure scalability, maintainability, and modular deployment.",
-      liveLink: "https://blancaleypinturas.com.ar/",
-      githubLink: "https://github.com/agustintamagnone/blancaley"
+      image: "/LP-Builder.png",
+      title: "Landing Page Builder",
+      labels: ["Wordpress", "PHP", "JavaScript", "SASS"],
+      description: "Built a modular Landing Page builder which contains over 60 reusable modules with user inputs for global elements.",
+      liveLink: "#",
+      githubLink: "#"
     },
     {
       image: "/keyhc.png",
