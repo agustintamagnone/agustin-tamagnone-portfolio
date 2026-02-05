@@ -275,8 +275,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:228d9b68-d09f-435d-baf3-39915985f412" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:c98c561e-6276-4bfe-b73d-cef45964e29f" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:86f8f90b-6e23-40ae-8cd4-c6d13cf95a46" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:a5022d0f-f950-49c6-b856-a34bed1599c2" />
             </div>
           </div>
         </section>
