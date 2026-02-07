@@ -29,12 +29,12 @@ export default function Home(): JSX.Element {
       title: "Backend Developer Intern",
       company: "Toppan Digital Language - Madrid, Spain",
       logo: "/tdl-logo.png",
-      challenge: "Design and development of internal company processes and customer experience based on a service using Machine Learning and NLP on a Transformers based model.",
-      action: "Assisted the development of this model through completion of tickets and pair-programming sessions.",
+      challenge: "Development of internal company processes based on a service using Machine Learning on a RoBERTa Transformers-based model, Natural Language Processing (NLP), and Named Entity Recognition (NER).",
+      action: "Assisted the development of this service through the implementation of Data Access services using Graph QL and also Unit/Integration testing throughout the whole process.",
       result: "Contributed to the internal deployment of this model that makes a big impact to our company's scope of clients, opening significantly the market opportunities, and also saves a big amount of time on our internal processes and tasks facilitating a faster delivery to our customers."
     },
     {
-      date: "JAN 2024 - OCT 2024",
+      date: "JAN 2024 - NOV 2024",
       title: "Territory Manager (South America and Canada)",
       company: "UTR Sports - Palo Alto, CA",
       logo: "/utr-logo.png",
@@ -67,8 +67,8 @@ export default function Home(): JSX.Element {
       logo: "/upm.png",
       degree: "Master in Software Engineering",
       university: "Universidad Politécnica de Madrid",
-      graduation: "September 2025 - June 2027",
-      gpa: "GPA TBD",
+      graduation: "September 2025 - December 2026",
+      gpa: "Current Average (1-10 scale): 9.52",
       details: [
       ]
     },
@@ -108,7 +108,7 @@ export default function Home(): JSX.Element {
       image: "/fake-news-detector.png",
       title: "Fake News Detector Machine Learning Project",
       labels: ["Machine Learning", "DistilBERT", "Python", "Jupyter", "Docker"],
-      description: "Machine Learning based Fake News Detector, that predicts and classifies an article as TRUE/FAKE based on NLP techniques and DistilBERT transformer model.",
+      description: "Fine-tuned a Machine Learning DistilBERT transformers-based model which is a Fake News Detector that predicts and classifies an article as TRUE/FAKE based on NLP techniques.",
       liveLink: "#",
       githubLink: "https://github.com/Birk2450/fake-news-detector-distilbert"
     },
@@ -275,8 +275,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:86f8f90b-6e23-40ae-8cd4-c6d13cf95a46" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:a5022d0f-f950-49c6-b856-a34bed1599c2" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:8d2e1865-cfd0-49d7-9a49-17bf7306a2c2" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:195798d3-3e57-4488-a123-dcb769ef9c5b" />
             </div>
           </div>
         </section>
@@ -375,7 +375,6 @@ export default function Home(): JSX.Element {
             </button>
           </form>
         </section>
-
       </main>
 
       <footer className={`relative z-10 border-t py-3 flex flex-row items-center text-center ${darkMode ? " border-white" : "border-black"}`}>
@@ -393,8 +392,6 @@ export default function Home(): JSX.Element {
           </a>
         </div>
       </footer>
-
     </div>
   );
 }
-
