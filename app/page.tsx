@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
       degree: "Master in Software Engineering",
       university: "Universidad Politécnica de Madrid",
       graduation: "September 2025 - December 2026",
-      gpa: "Current Average (1-10 scale): 9.52",
+      gpa: "Current Average (1-10 scale): 9.6",
       details: [
       ]
     },
