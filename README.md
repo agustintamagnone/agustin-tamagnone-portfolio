@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/946796539.svg)](https://doi.org/10.5281/zenodo.18798577)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
