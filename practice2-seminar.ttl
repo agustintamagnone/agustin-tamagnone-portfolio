@@ -1,0 +1,107 @@
+@prefix ex:   <http://example.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Author: Agustin Tamagnone
+# Universidad Politécnica de Madrid (UPM)
+# ETSIINF - SEMINAR 3
+# Instructor: Daniel Garijo
+# Diagram generated at the following tool: https://www.ldf.fi/service/rdf-grapher
+
+#########
+# Agents
+#########
+ex:Laura a prov:Agent ; rdfs:label "Laura" .
+ex:Jack  a prov:Agent ; rdfs:label "Jack" .
+ex:Jill  a prov:Agent ; rdfs:label "Jill" .
+ex:Peter a prov:Agent ; rdfs:label "Peter" .
+ex:Paula a prov:Agent ; rdfs:label "Paula" .
+ex:Zack  a prov:Agent ; rdfs:label "Zack" .
+
+########
+# Plans
+########
+ex:Survey_Plan a prov:Plan ; rdfs:label "Plan for Conducting Surveys" .
+ex:Survey_Revision_Plan a prov:Plan ; rdfs:label "Plan for Revising the Survey" .
+ex:Paper_Plan a prov:Plan ; rdfs:label "Plan for Analyzing Data and Writing Paper" .
+
+##########
+# Entities
+##########
+ex:Survey_V1 a prov:Entity ; rdfs:label "First Survey Design" .
+ex:Survey_V2 a prov:Entity ;
+  rdfs:label "Second Survey Design" ;
+  prov:wasRevisionOf ex:Survey_V1 .
+
+ex:Data_1 a prov:Entity ; rdfs:label "Survey Data (Round 1)" .
+ex:Data_2 a prov:Entity ; rdfs:label "Survey Data (Round 2)" .
+
+ex:Statistics_Package a prov:Entity ; rdfs:label "Statistical Analysis Package" .
+ex:Final_Paper a prov:Entity ; rdfs:label "Final Paper" .
+
+############
+# Activities
+############
+ex:Design_Activity a prov:Activity ; rdfs:label "Designing the First Survey" .
+ex:Conduct_Survey_1 a prov:Activity ; rdfs:label "Conducting the First Survey" .
+ex:Revise_Activity a prov:Activity ; rdfs:label "Revising the Survey" .
+ex:Conduct_Survey_2 a prov:Activity ; rdfs:label "Conducting the Second Survey" .
+ex:Analysis_Activity a prov:Activity ; rdfs:label "Analyzing Data and Writing Paper" .
+
+########################
+# Use / Generation links
+########################
+ex:Survey_V1 prov:wasGeneratedBy ex:Design_Activity .
+ex:Conduct_Survey_1 prov:used ex:Survey_V1 ;
+  prov:generated ex:Data_1 .
+
+ex:Revise_Activity prov:used ex:Survey_V1 ;
+  prov:generated ex:Survey_V2 .
+
+ex:Conduct_Survey_2 prov:used ex:Survey_V2 ;
+  prov:generated ex:Data_2 .
+
+ex:Analysis_Activity prov:used ex:Data_1, ex:Data_2, ex:Statistics_Package ;
+  prov:generated ex:Final_Paper .
+ex:Final_Paper prov:wasDerivedFrom ex:Data_1, ex:Data_2 .
+
+#######################
+# Agents + Plans (PROV)
+#######################
+ex:Design_Activity prov:qualifiedAssociation [
+  a prov:Association ;
+  prov:agent ex:Laura ;
+  prov:hadPlan ex:Survey_Plan
+] .
+
+ex:Conduct_Survey_1 prov:qualifiedAssociation [
+  a prov:Association ;
+  prov:agent ex:Jack ;
+  prov:hadPlan ex:Survey_Plan
+], [
+  a prov:Association ;
+  prov:agent ex:Jill ;
+  prov:hadPlan ex:Survey_Plan
+] .
+
+ex:Revise_Activity prov:qualifiedAssociation [
+  a prov:Association ;
+  prov:agent ex:Laura ;
+  prov:hadPlan ex:Survey_Revision_Plan
+] .
+
+ex:Conduct_Survey_2 prov:qualifiedAssociation [
+  a prov:Association ;
+  prov:agent ex:Peter ;
+  prov:hadPlan ex:Survey_Plan
+], [
+  a prov:Association ;
+  prov:agent ex:Paula ;
+  prov:hadPlan ex:Survey_Plan
+] .
+
+ex:Analysis_Activity prov:qualifiedAssociation [
+  a prov:Association ;
+  prov:agent ex:Zack ;
+  prov:hadPlan ex:Paper_Plan
+] .
