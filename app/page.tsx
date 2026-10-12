@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
   const experiences = [
     {
       date: "SEPT 2025 - PRESENT",
-      title: "Backend Developer Intern",
+      title: "Backend Developer",
       company: "Toppan Digital Language - Madrid, Spain",
       logo: "/tdl-logo.png",
       challenge: "Development of internal company processes based on a service using Machine Learning on a RoBERTa Transformers-based model, Natural Language Processing (NLP), and Named Entity Recognition (NER).",
@@ -67,7 +67,7 @@ export default function Home(): JSX.Element {
       logo: "/upm.png",
       degree: "Master in Software Engineering",
       university: "Universidad Politécnica de Madrid",
-      graduation: "September 2025 - December 2026",
+      graduation: "September 2025 - June 2027",
       gpa: "Current Average (1-10 scale): 9.6",
       details: [
       ]
@@ -275,8 +275,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className="z-10 mt-6 flex space-x-4">
               <ButtonPrimary text="Schedule a Meeting" darkMode href="https://calendar.app.google/x9MNvYvJyzQe1RKv8" />
-              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:8d2e1865-cfd0-49d7-9a49-17bf7306a2c2" />
-              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:195798d3-3e57-4488-a123-dcb769ef9c5b" />
+              <ButtonSecondary text="View Resume" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:2fd0d60a-752a-4559-b983-cee09cc092e7" />
+              <ButtonSecondary text="Mirar CV" darkMode href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5710ce7c-8be9-4fe0-925e-cebe8bacc8a3" />
             </div>
           </div>
         </section>
